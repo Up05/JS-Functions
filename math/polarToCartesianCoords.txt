@@ -1,0 +1,5 @@
+function polarToCartesianCoords(a, r, offset){
+    return [x = cos(a) * r + offset,
+            y = sin(a) * r + offset
+    ]
+}

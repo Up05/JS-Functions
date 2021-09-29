@@ -1,0 +1,25 @@
+
+function toBinary(num) {
+let r = ""; let numL = num.toString().split('').length
+    for(let i = 0; i <= numL; i++){
+      r += num % 2;
+      num = floor(num / 2);
+      if(num < 1){
+        break;
+      }
+  }
+ return invertString(r)
+}
+
+function invertString(str){
+  str = str.split('')
+  let strL = str.length
+  for(let i = strL -1; i >= 0; i--){
+      str.push(str[i])
+  }
+  for(let i = 0; i < strL; i++){
+      let temp = str.shift()
+  }
+  str = str.join('')
+  return str
+}

@@ -1,0 +1,18 @@
+function makeMouseTrail(){
+    mouseTrail.push(mouseX)
+    mouseTrail.push(mouseY)
+
+    if(mouseTrail.length >= 20){
+        let temp = mouseTrail.shift()
+            temp = mouseTrail.shift()
+    }
+
+    push()
+        for(let i = 0; i <= mouseTrail.length; i += 2){
+            stroke(255, 0, 80, (i * 10)); strokeWeight(2)
+            if(mouseTrail[i + 1] && mouseTrail[i - 2]){
+                line(mouseTrail[i - 2], mouseTrail[i - 1], mouseTrail[i], mouseTrail[i + 1])
+            }
+        }
+    pop()   
+}

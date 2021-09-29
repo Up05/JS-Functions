@@ -1,0 +1,3 @@
+function amORpm(hour){
+  return (hour > 11) ? "PM" : "AM"
+}

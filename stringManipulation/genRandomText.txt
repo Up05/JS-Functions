@@ -1,0 +1,20 @@
+
+function getRandomText(wordCount, avgWordLength, wordCase, punctuationChance) {
+  o = "";
+  let wordC = 0
+  if(wordCase == "LOWER"){
+    wordC = 0
+  } else {
+    wordC = 32 
+  }
+  for(let j = 0; j < wordCount; j++){
+    rW = floor(random(avgWordLength-avgWordLength/2,avgWordLength+avgWordLength/2));
+    for(i = 1; i <= rW; i++){
+      o += char(random(97,122) - wordC);
+    }
+    let r = floor(random(punctuationChance));
+    if(r == 1){o += ".";} else if(r == 2){o += ","; }
+    o += (j == wordCount - 1) ? "." : " ";
+  }
+  return o
+}

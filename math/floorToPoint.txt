@@ -1,0 +1,9 @@
+function u_floor(number, length){
+    let l = "1"
+    for(let i = 1; i <= length;i ++){
+        l += "0"
+    }
+    l = parseInt(l)
+    return floor(number * l) / l
+
+}

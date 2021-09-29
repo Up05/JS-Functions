@@ -1,0 +1,8 @@
+function u_defaultTriangle(x, y, speed){
+    let dir = (speed > 0) ? 1 : -1
+    triangle(x, y, x + (dir * 60), y + 20, x, y + 40)
+    push()
+        fill(255, 50)
+        triangle(x, y, x + (dir * 60) - 2, y + 18, x, y + 18)
+    pop()
+}

@@ -1,0 +1,8 @@
+
+function clipNumber(number, interval) {
+
+    let a = number % interval
+    let b = number - a
+
+    return b
+}

@@ -1,0 +1,15 @@
+function randExitCode(ExitLength){
+        let o = ""
+        for(let i = 0; i < ExitLength; i ++){
+            o += char(floor(random(65, 122)))
+        }
+        return o
+    }
+
+function randInvisExitCode(ExitLength){
+    let o = ""
+    for(let i = 0; i < ExitLength + floor(random(-ExitLength * 2, ExitLength * 2)); i ++){
+        o += " "
+    }
+    return o
+}

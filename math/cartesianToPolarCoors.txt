@@ -1,0 +1,3 @@
+function cartesianToPolarCoords(x, y){
+  return [sqrt(x*x + y*y), atan(y / x)]
+}

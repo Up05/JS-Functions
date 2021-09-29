@@ -1,0 +1,4 @@
+function getSpeedAfterFrames(speed, frames){
+    let temp = speed * frames
+    return temp
+}

@@ -1,0 +1,12 @@
+function getFromPixelArray(x, y){
+    let i = (x + y * width) * 4
+    return {
+        r: pixels[i],
+        g: pixels[i + 1],
+        b: pixels[i + 2],
+        a: pixels[i + 3]
+    }
+    if(x != floor(x * 10) / 10 || y != floor(y * 10) / 10)){
+        console.warn("the number must be an integer!")
+    }
+}

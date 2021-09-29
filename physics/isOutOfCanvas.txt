@@ -1,0 +1,9 @@
+function isOutOfCanvas(x, y, xs, ys){
+    if(x < 0 || x + xs > width || y < 0 || y + ys > height){
+        return true
+    } else {
+        return false
+    }
+
+
+}
